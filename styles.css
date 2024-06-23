@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: auto;
+    width: 100vw;
+    padding: 0.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 3.5rem;
+    width: 100%;
+    background-color: #ebebeb;
+
+    .logo-wrapper {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 7rem;
+        color: #414442;
+        span img {
+            width: 2rem;
+        }
+    }
+
+    nav {
+        height: 100%;
+        ul {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            li {
+                list-style-type: none;
+                margin: 1rem;
+                .registerBtn {
+                    background-color: #52c252;
+                    padding: 0.7rem 1.3rem;
+                    color: whitesmoke;
+                    border-radius: 1px;
+                }
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+main {
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+    #main-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        place-items: center;
+        .description {
+            font-size: 2.5rem;
+            width: 80%;
+
+            h2 {
+                color: #414442;
+                display: flex;
+                flex-direction: column;
+                .green-text {
+                    color: #54c454;
+                }
+            }
+
+            p {
+                font-size: 0.9rem;
+                color: #6c706d;
+                margin-top: 1rem;
+            }
+
+            button {
+                    background-color: #52c252;
+                    padding: 0.6rem 1.3rem;
+                    border: none;
+                    color: #f0f3ee;
+                    border-radius: 2px; 
+                        
+            }
+        }
+    }
+}
